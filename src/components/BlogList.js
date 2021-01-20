@@ -1,11 +1,6 @@
 import React from "react";
 
-const BlogList = ({ blogs, title }) => {
-  const handleDelete = (id) => {
-    const newblogs = blogs.filter((blog) => blog.id !== id);
-    console.log(newblogs);
-    // setBlogs(newblogs);
-  };
+const BlogList = ({ blogs, title, handleDelete }) => {
   return (
     <div>
       <h2>{title}</h2>
